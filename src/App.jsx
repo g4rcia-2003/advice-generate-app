@@ -19,8 +19,6 @@ function App() {
 		setNum(number)
 	}
 
-	console.log(num)
-
 	useEffect(() => {
 		getTips(setTips, num)
 	}, [num])
@@ -35,7 +33,7 @@ function App() {
 						<p>"{tips.advice}"</p>
 						<Picture />
 						<Button onClick={numAlet}>
-							<img src='../public/images/icon-dice.svg' />
+							<img src='images/icon-dice.svg' />
 						</Button>
 					</Card>
 				</Container>
